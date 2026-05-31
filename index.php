@@ -410,13 +410,6 @@ $result_publik = mysqli_query($koneksi, $query_publik);
             <p style="text-align:center; padding: 40px;">Belum ada laporan.</p>
         <?php endif; ?>
     </div>
-
-    <footer class="footer">
-        <div><strong>SIPELDA</strong><br><span style="color:#a9b9cc;">© 2026 SIPELDA Pemerintah Kota. Seluruh Hak Cipta Dilindungi.</span></div>
-        <div class="footer-links">
-            <a href="#">Kontak Kami</a><a href="#">Kebijakan Privasi</a><a href="#">Syarat & Ketentuan</a>
-        </div>
-    </footer>
 </body>
 
 </html>
