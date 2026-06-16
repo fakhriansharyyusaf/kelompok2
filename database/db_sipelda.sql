@@ -74,17 +74,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `foto_profil` varchar(255) DEFAULT NULL,
   `role` enum('admin','masyarakat') DEFAULT 'masyarakat',
   PRIMARY KEY (`id_user`),
-  UNIQUE KEY `username` (`username`),
-  UNIQUE KEY `nik` (`nik`)
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table db_sipelda.users: ~5 rows (approximately)
-REPLACE INTO `users` (`id_user`, `nik`, `nama_lengkap`, `username`, `password`, `no_telp`, `foto_profil`, `role`) VALUES
-	(2, NULL, 'ADMIN1', 'admin1', '$2y$12$SOsYAKF9xiXGnLHEoqfL1eEqU1PbUSQkU7Ov7ABENwpgU7CKBWMFq', '088187654321', NULL, 'admin'),
-	(3, NULL, 'Arjuna Sandya Raissa Naryama', 'arjunasrn', '$2y$12$Z9T8/WehchpVfuMd1eiUau8/LXL/0xxIRFeA2O4Gr1zpbHfqv9xIC', '08819408505', NULL, 'masyarakat'),
-	(4, NULL, 'Muhammad Fakhri Anshari Yusaf', 'mfakhri', '$2y$12$F/iUIlmy7W5/krncw7C7cOg/a2lxWuYjGUkNd/LqiG7wfAEOlTt4i', '081230333108', NULL, 'masyarakat'),
-	(5, NULL, 'Jauza Aida Alifah', 'jauzaaa', '$2y$12$6ZvWlR.pge2fAwl9OAxldO8ecJpNpVjAbNeM0TRLsswY5fyLwqLAW', '089509565788', NULL, 'masyarakat'),
-	(6, NULL, 'ADMIN2', 'admin2', '$2y$12$e2WsORwa7Zff.qYUvWZb3OurHlQQt3s5sJiNzx/LeHtM0ADHlDkXm', '08169674205', NULL, 'admin');
+REPLACE INTO `users` (`id_user`, `nama_lengkap`, `username`, `password`, `no_telp`, `foto_profil`, `role`) VALUES
+	(2, 'ADMIN1', 'admin1', '$2y$12$SOsYAKF9xiXGnLHEoqfL1eEqU1PbUSQkU7Ov7ABENwpgU7CKBWMFq', '088187654321', NULL, 'admin'),
+	(3, 'Arjuna Sandya Raissa Naryama', 'arjunasrn', '$2y$12$Z9T8/WehchpVfuMd1eiUau8/LXL/0xxIRFeA2O4Gr1zpbHfqv9xIC', '08819408505', NULL, 'masyarakat'),
+	(4, 'Muhammad Fakhri Anshari Yusaf', 'mfakhri', '$2y$12$F/iUIlmy7W5/krncw7C7cOg/a2lxWuYjGUkNd/LqiG7wfAEOlTt4i', '081230333108', NULL, 'masyarakat'),
+	(5, 'Jauza Aida Alifah', 'jauzaaa', '$2y$12$6ZvWlR.pge2fAwl9OAxldO8ecJpNpVjAbNeM0TRLsswY5fyLwqLAW', '089509565788', NULL, 'masyarakat'),
+	(6, 'ADMIN2', 'admin2', '$2y$12$e2WsORwa7Zff.qYUvWZb3OurHlQQt3s5sJiNzx/LeHtM0ADHlDkXm', '08169674205', NULL, 'admin');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
